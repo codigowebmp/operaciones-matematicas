@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Patrick Hand';
+}
+
+body {
+    background-color: slategray;
+}
+
+.container {
+    max-width: 500px;
+    background: linear-gradient(#34c0d6, #d5f3f7);
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-operadores {
+    display: flex;
+    justify-content: center;
+}
+
+.container-operadores button {
+    border: none;
+    margin: 10px 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container-operadores button:hover {
+    transform: scale(1.3);
+}
+
+.container-operacion {
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #000;
+    padding: 6px 0;
+}
+
+.container-operacion input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(38, 86, 196);
+    font-size: 45px;
+    width: 70px;
+    text-align: center;
+    outline: none;
+}
+
+#corregir {
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    border: 1px solid #000;
+    padding: 10px;
+    transition: .5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#corregir:hover {
+    transform: scale(1.2);
+}
+
+.activado {
+    background-color: rgb(61, 118, 198);
+    color: #fff;
+    transform: (1.3);
+}
+
+i {
+    font-size: 25px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#msj_correccion {
+    text-align: left;
+}
+
+.fa-face-frown {
+    color: red;
+    animation: zoom .5s forwards
+}
+
+.fa-face-grin {
+    color: rgb(103, 82, 241);
+    animation: zoom .5s forwards
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
